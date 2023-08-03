@@ -5,7 +5,8 @@ interface OwnProps extends Omit<Menu, 'price'> {
     showBestMenuName(name:string):string
 }
 
-const BestMenu:React.FC<OwnProps> = ({name, category, showBestMenuName}) => {
+// 함수까지 받아올수있음 
+const BestMenu:React.FC<OwnProps> = ({name, showBestMenuName}) => {
   return (
     <div>{name}</div>
   )
