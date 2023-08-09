@@ -2,9 +2,11 @@ import React from 'react'
 import { Menu } from './model/restaurant'
 
 interface OwnProps extends Omit<Menu, 'price'> {
-    showBestMenuName(name:string):string
+  showBestMenuName(name: string): string
 }
-const BestMenu:React.FC<OwnProps> = ({name, showBestMenuName}) => {
+
+// ts
+const BestMenu: React.FC<OwnProps> = ({ name, showBestMenuName }) => {
   return (
     <div>{name}</div>
   )
